@@ -1,7 +1,7 @@
 app:
   name: "bluebell"
   mode: "dev"
-  port: 80
+  port: 9090
 
 auth:
   jwt_expire: 8760
@@ -15,16 +15,16 @@ log:
 
 mysql:
   host: 127.0.0.1
-  port: 3306
+  port: 13306
   user: "root"
-  password: "qwe!223"
+  password: "gree123"
   db: "bluebell"
   max_open_connection: 20
   max_idle_connection: 10
 
 redis:
   host: 127.0.0.1
-  port: 6379
+  port: 16379
   password: ""
   db: 0
   pool_size: 100
