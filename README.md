@@ -7,7 +7,7 @@ Go Web 进阶课程 bluebell 项目，提供如下功能：
 - 用户可以浏览到根据分数或者时间排序的帖子列表
 - 利用令牌桶对某些接口进行限流
 
-bluebell 项目具体代码详解可见[Go Web 进阶课程](https://study.163.com/course/introduction/1210171207.htm)」，建议使用之前阅读。
+bluebell 项目具体代码详解可见「[Go Web 进阶课程](https://study.163.com/course/introduction/1210171207.htm)」，建议使用之前阅读。
 
 ## 使用准备
 
