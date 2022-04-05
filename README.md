@@ -92,7 +92,9 @@ go_bluebell     | [GIN-debug] GET    /debug/pprof/threadcreate --> github.com/gi
 
 ### MySQL 和 Redis 安装配置
 本地安装 MySQL、Docker 启动 MySQL、远程 MySQL 都是可以的，只要能正常连接使用即可，这里建议用 Docker 起一个 MySQL 。
+
 本地安装 Redis、Docker 启动 Redis、远程 Redis 都是可以的，只要能正常连接使用即可，这里建议用 Docker 起一个 Redis 。
+
 修改配置文件，确保项目连接的 MySQL 和 Redis 是用 Docker 启动的 MySQL 和 Redis，同时要在 MySQL 新建 bluebell 库。
 
 ### 安装依赖包
