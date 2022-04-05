@@ -2,8 +2,8 @@
 
 Go Web 进阶课程 bluebell 项目，提供如下功能：
 
-- 利用 gin 框架 + redis + mysql 搭建一套 Go web 开发通用脚手架
-- 模仿 stack overflow 构建一个帖子投票网站，用户可以对帖子进行投票并且可以创建帖子
+- 利用 Gin 框架 + Redis + MySQL 搭建一套 Go Web 开发通用脚手架
+- 模仿 Stack Overflow 构建一个帖子投票网站，用户可以对帖子进行投票并且可以创建帖子
 - 用户可以浏览到根据分数或者时间排序的帖子列表
 - 利用令牌桶对某些接口进行限流
 
