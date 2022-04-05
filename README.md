@@ -7,7 +7,7 @@ Go Web 进阶课程 bluebell 项目，提供如下功能：
 - 用户可以浏览到根据分数或者时间排序的帖子列表
 - 利用令牌桶对某些接口进行限流
 
-bluebell 项目具体代码详解可见 Go Web 进阶课程，建议使用之前阅读。
+bluebell 项目具体代码详解可见[Go Web 进阶课程](https://study.163.com/course/introduction/1210171207.htm)」，建议使用之前阅读。
 
 ## 使用准备
 
@@ -116,45 +116,7 @@ go run main.go
 go build
 bluebell
 ```
-
-运行结果类似如下：
-
-```
-go_bluebell     | [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
-go_bluebell     |  - using env: export GIN_MODE=release
-go_bluebell     |  - using code:    gin.SetMode(gin.ReleaseMode)
-go_bluebell     |
-go_bluebell     | [GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /                         --> bluebell/router.Setup.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /ping                     --> bluebell/router.Setup.func2 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] POST   /api/v1/signup            --> bluebell/controller.SignUpHandler (3 handlers)
-go_bluebell     | [GIN-debug] POST   /api/v1/login             --> bluebell/controller.LoginHandler (3 handlers)
-go_bluebell     | [GIN-debug] GET    /api/v1/community         --> bluebell/controller.CommunityHandler (3 handlers)
-go_bluebell     | [GIN-debug] GET    /api/v1/community/:id     --> bluebell/controller.CommunityDetailHandler (3 handlers)
-go_bluebell     | [GIN-debug] GET    /api/v1/post/:id          --> bluebell/controller.GetPostDetailHandler (3 handlers)
-go_bluebell     | [GIN-debug] GET    /api/v1/posts             --> bluebell/controller.GetPostListHandler (3 handlers)
-go_bluebell     | [GIN-debug] GET    /api/v1/posts2            --> bluebell/controller.GetPostListTwoHandler (3 handlers)
-go_bluebell     | [GIN-debug] POST   /api/v1/post              --> bluebell/controller.CreatePostHandler (5 handlers)
-go_bluebell     | [GIN-debug] POST   /api/v1/vote              --> bluebell/controller.PostVoteHandler (5 handlers)
-go_bluebell     | [GIN-debug] GET    /debug/pprof/             --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /debug/pprof/cmdline      --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /debug/pprof/profile      --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] POST   /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /debug/pprof/trace        --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /debug/pprof/allocs       --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /debug/pprof/block        --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /debug/pprof/goroutine    --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /debug/pprof/heap         --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /debug/pprof/mutex        --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-go_bluebell     | [GIN-debug] GET    /debug/pprof/threadcreate --> github.com/gin-contrib/pprof.pprofHandler.func1 (3 handlers)
-```
-
-可以看到 Server 已经启动成功。
-
-这时候访问 [http://localhost:9090/](http://localhost:9090/) 即可获取帖子列表信息。
+如果 server 启动成功，这时候访问 [http://localhost:9090/](http://localhost:9090/) 即可获取帖子列表信息。
 
 ## 待开发
 
